@@ -2,7 +2,7 @@
 # This file should be sourced
 
 # Change directory to user home
-cd /home/ansibleadmin
+cd /home/adminuser
 
 # Upgrade all packages that have available updates and remove old ones.
 sudo apt-get update
@@ -21,7 +21,7 @@ sudo apt install python3-pip --assume-yes
 
 # Setup virtual environment and push home folder ownership
 sudo python3 -m venv venv
-sudo chown ansibleadmin /home/ansibleadmin --recursive
+sudo chown adminuser /home/adminuser --recursive
 
 # Install ansible and azure modules into virtual environment
 pip3 install -r requirements-ansible.txt
